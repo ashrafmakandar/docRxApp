@@ -23,7 +23,7 @@ const Splash = () => {
         AsyncStorage.getItem('user').then((val)=>{
         
 
-            if(val!=null)
+            if(val!==null && val!==undefined)
             {
                   const user:User= JSON.parse(val);
     if(user.isActive === true)
